@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {Freshchat, FreshchatConfig} from 'react-native-freshchat-sdk';
 import HomeScreen from '../screens/home';
 import CalenderScreen from '../screens/calenderScreen';
 import ProfileScreen from '../screens/profileScreen';
@@ -181,6 +182,9 @@ const TabBar = ({
             });
 
             if (!isFocused && !event.defaultPrevented) {
+              route.name === 'Message'
+                ? Freshchat.showConversations()
+                : navigation.navigate(route.name);
               // route.name === 'Home'
               //   ? Linking.openURL(
               //       Platform.OS === 'android'
@@ -188,7 +192,6 @@ const TabBar = ({
               //         : 'telprompt:${+1234567890}',
               //     )
               //   :
-              navigation.navigate(route.name);
             }
           };
 

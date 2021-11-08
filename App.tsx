@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, StatusBar,Platform} from 'react-native';
+import {View, StatusBar, Platform} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {PersistGate} from 'redux-persist/integration/react';
 import FlashMessage from 'react-native-flash-message';
@@ -13,9 +13,15 @@ import PushNotification, {Importance} from 'react-native-push-notification';
 // import thunk from 'redux-thunk';
 // import {createStore, applyMiddleware, compose} from 'redux';
 import {Store, persistor} from './_redux';
+import {Freshchat, FreshchatConfig} from 'react-native-freshchat-sdk';
 
 //const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 const App = () => {
+  const freshchatConfig = new FreshchatConfig(
+    '123b7f68-8dc3-4942-9dd6-2df9e26e33b0',
+    '6ca56233-08cb-46ba-bb77-e1861039dd85',
+  );
+  Freshchat.init(freshchatConfig);
   useEffect(() => {
     Platform.OS === 'android' &&
       PushNotification.createChannel(

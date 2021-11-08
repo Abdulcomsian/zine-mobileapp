@@ -1,13 +1,30 @@
 import React, {useEffect} from 'react';
 import {View, Text, StyleSheet, StatusBar, Platform} from 'react-native';
-import {WebView} from 'react-native-webview';
-import LottieView from 'lottie-react-native';
+// import {WebView} from 'react-native-webview';
+// import LottieView from 'lottie-react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const MessageScreen = () => {
   const {top, bottom} = useSafeAreaInsets();
+
   useEffect(() => {
     //StatusBar.setBackgroundColor('#008dd5');
+
+    // Freshchat.addEventListener(
+    //   Freshchat.EVENT_UNREAD_MESSAGE_COUNT_CHANGED,
+    //   () => {
+    //     console.log('onUnreadMessageCountChanged triggered');
+    //     Freshchat.getUnreadCountAsync(data => {
+    //       const {count, status} = data;
+    //       if (status) {
+    //         console.log('Message count: ' + count);
+    //       } else {
+    //         console.log('getUnreadCountAsync unsuccessful');
+    //       }
+    //     });
+    //   },
+    // );
+    return () => {};
   }, []);
   return (
     <View
@@ -15,7 +32,7 @@ const MessageScreen = () => {
         styles.mainContainer,
         {paddingBottom: 63 + 25 + bottom, paddingTop: top},
       ]}>
-      <WebView
+      {/* <WebView
         style={{flex: 1}}
         javaScriptEnabled
         userAgent="Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3714.0 Mobile Safari/537.36"
@@ -46,7 +63,7 @@ const MessageScreen = () => {
             />
           </View>
         )}
-      />
+      /> */}
     </View>
   );
 };
