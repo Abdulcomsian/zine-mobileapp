@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910813713862",
+    "project_id": "zine-collction",
+    "storage_bucket": "zine-collction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910813713862:android:fa39cdd60c6caa19e68ec7",
+        "android_client_info": {
+          "package_name": "com.zinecollectionproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910813713862-4vsctvtajepegufo9hhfotllik9i0v89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOFWbwuaavpgdXvQIPdJ5aE8LO8-y4YME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910813713862-4vsctvtajepegufo9hhfotllik9i0v89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
