@@ -11,15 +11,20 @@ const SplashScreen = ({navigation}: {navigation: any}) => {
   }, [loggedIn, navigation]);
   useEffect(() => {
     if (loggedIn) {
-      console.log('detail', detail);
-      const freshchatUser = new FreshchatUser();
-      const [fn, ln] = detail.name.split(' ');
-      freshchatUser.firstName = fn;
-      freshchatUser.lastName = ln;
-      freshchatUser.email = detail.email;
-      Freshchat.setUser(freshchatUser, error => {
-        console.log(error);
-      });
+      // console.log('detail', detail);
+      // const freshchatUser = new FreshchatUser();
+      // Freshchat.getUser(user => {
+      //   var restoreId = user.restoreId;
+      //   console.log('restoreId: ' + restoreId);
+      //   const [fn, ln] = detail.name.split(' ');
+      //   freshchatUser.firstName = fn;
+      //   freshchatUser.lastName = ln;
+      //   freshchatUser.email = detail.email;
+      //   Freshchat.setUser(freshchatUser, error => {
+      //     console.log(error);
+      //   });
+      // });
+
       // Freshchat.identifyUser(freshchatUser.email, null, error => {
       //   console.log(error);
       // });

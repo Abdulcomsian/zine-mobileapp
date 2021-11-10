@@ -18,8 +18,8 @@ import {Freshchat, FreshchatConfig} from 'react-native-freshchat-sdk';
 //const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 const App = () => {
   const freshchatConfig = new FreshchatConfig(
-    'a81fa200-62dd-4e56-b8ed-7f88a1801fae',
-    'f7050278-3539-492d-83a6-055ef2b24a2c',
+    '4a25f245-19a2-4b02-926c-2abbbbff021d',
+    'dbb3293e-b9de-4872-871b-28fbf3ef4fec',
   );
   Freshchat.init(freshchatConfig);
   useEffect(() => {
