@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import ACTIONS from '../_redux/actions';
+import {Freshchat} from 'react-native-freshchat-sdk';
 import fontFamily from '../constants/fontFamily';
 const header = require('../assets/img/header.png');
 const logout = require('../assets/img/logout.png');
@@ -70,7 +71,9 @@ function HomeScreen({navigation}: {navigation: any}) {
         <View style={[styles.innerView, {justifyContent: 'center'}]}>
           <TouchableOpacity
             style={styles.commonDiv}
-            onPress={() => navigation.navigate('Message')}>
+            onPress={() => {
+              Freshchat.showConversations();
+            }}>
             <View style={styles.imgDiv}>
               <Image source={chat} style={styles.commonImg} />
             </View>

@@ -151,13 +151,13 @@ function ProfileScreen({navigation}: {navigation: any}) {
                 <Text style={styles.valueAppointment}>
                   {counts.weeklyAppointments}
                 </Text>
-                <Text style={styles.durationAppointment}>To Week</Text>
+                <Text style={styles.durationAppointment}>This Week</Text>
               </View>
               <View style={styles.commonAppointment}>
                 <Text style={styles.valueAppointment}>
                   {counts.monthlyAppointments}
                 </Text>
-                <Text style={styles.durationAppointment}>To Month</Text>
+                <Text style={styles.durationAppointment}>This Month</Text>
               </View>
             </View>
           </View>

@@ -11,7 +11,8 @@
     "apk": "cd android && ./gradlew assembleRelease",
     "clean": "cd android && ./gradlew clean",
     "getsha1": "cd android && ./gradlew signingReport",
-    "pod": "npx pod-install"
+    "pod": "npx pod-install",
+    "pod-u": "cd ios && pod install --repo-update"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.9",
@@ -31,7 +32,7 @@
     "react-native-callkeep": "^4.3.1",
     "react-native-elements": "^3.4.2",
     "react-native-flash-message": "^0.2.0",
-    "react-native-freshchat-sdk": "^4.0.0",
+    "react-native-freshchat-sdk": "^4.0.1",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-image-crop-picker": "^0.36.4",
     "react-native-linear-gradient": "^2.5.6",
