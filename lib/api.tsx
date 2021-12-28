@@ -1,5 +1,6 @@
 import Axios, {AxiosResponse, AxiosError} from 'axios';
-const baseURL = 'https://zine.accrualhub.com/public/';
+// const baseURL = 'https://zine.accrualhub.com/public/';
+const baseURL = 'https://zinetech.app/public/';
 const commonHeaders = {
   Accept: 'application/json',
   'Content-Type': 'application/json',
@@ -25,6 +26,7 @@ const getCustomHeader = (multipart: boolean = false) => {
 const getServerImage = (pth: string) => ({uri: baseURL + pth});
 
 const Login = (payload: any) => {
+  console.log('Pay load :', payload);
   return axios
     .post('/login', payload)
     .then(({data}: AxiosResponse) => data)
@@ -96,6 +98,24 @@ const GetCompaignLink = () => {
       return response?.data;
     });
 };
+
+const GetVideo = () => {
+  return axios
+    .get('/onboard-video-link', {...getCustomHeader()})
+    .then(({data}: AxiosResponse) => data)
+    .catch(({response}: AxiosError) => {
+      return response?.data;
+    });
+};
+
+const GetBoardingLink = () => {
+  return axios
+    .get('/onboard-link', {...getCustomHeader()})
+    .then(({data}: AxiosResponse) => data)
+    .catch(({response}: AxiosError) => {
+      return response?.data;
+    });
+};
 export default {
   Login,
   Register,
@@ -108,4 +128,6 @@ export default {
   GetCompaignLink,
   baseURL,
   GetAppointmentCounts,
+  GetVideo,
+  GetBoardingLink
 };

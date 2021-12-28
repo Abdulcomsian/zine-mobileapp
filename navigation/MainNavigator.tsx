@@ -19,6 +19,7 @@ import MessageScreen from '../screens/messageScreen';
 import BuySellScreen from '../screens/buySell';
 import {enableScreens} from 'react-native-screens';
 import {RemoteNavigation} from '../lib/utilts';
+import SurveyScreen from '../screens/servey';
 enableScreens(true);
 const Stack = createStackNavigator();
 
@@ -149,6 +150,11 @@ const MainNavigator = () => {
           <Stack.Screen
             name="BuySellScreen"
             component={BuySellScreen}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="SurveyScreen"
+            component={SurveyScreen}
             options={{headerShown: false}}
           />
         </Fragment>

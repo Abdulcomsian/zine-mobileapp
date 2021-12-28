@@ -68,7 +68,7 @@ function HomeScreen({navigation}: {navigation: any}) {
             </View>
           </TouchableOpacity>
         </View>
-        <View style={[styles.innerView, {justifyContent: 'center'}]}>
+        <View style={[styles.innerView]}>
           <TouchableOpacity
             style={styles.commonDiv}
             onPress={() => {
@@ -82,17 +82,17 @@ function HomeScreen({navigation}: {navigation: any}) {
               <Text style={styles.boldText}>Chat Room</Text>
             </View>
           </TouchableOpacity>
-          {/* <TouchableOpacity
+          <TouchableOpacity
             style={styles.commonDiv}
-            onPress={() => navigation.navigate('BuySellScreen')}>
+            onPress={() => navigation.navigate('SurveyScreen')}>
             <View style={styles.imgDiv}>
               <Image source={buy} style={styles.commonImg} />
             </View>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Text style={styles.nameText}>Buyers</Text>
-              <Text style={styles.boldText}>& Sellers</Text>
+              <Text style={styles.nameText}>Survey</Text>
+              <Text style={styles.boldText}>& Help</Text>
             </View>
-          </TouchableOpacity> */}
+          </TouchableOpacity>
         </View>
       </ScrollView>
       <Modal visible={visible} animationType="fade" transparent>

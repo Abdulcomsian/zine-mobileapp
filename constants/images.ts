@@ -15,6 +15,8 @@ const homeIcon = require('../assets/img/homeIcon.png');
 const backIcon = require('../assets/img/back.png');
 const hide = require('../assets/img/hide.png');
 const unhide = require('../assets/img/unhide.png');
+const survey = require('../assets/img/survey.png')
+const boarding = require('../assets/img/boarding.png')
 
 export default {
   client,
@@ -34,4 +36,6 @@ export default {
   backIcon,
   hide,
   unhide,
+  survey,
+  boarding
 };

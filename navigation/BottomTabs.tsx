@@ -12,6 +12,8 @@ import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import CallScreen from '../screens/callScreen';
 import MessageScreen from '../screens/messageScreen';
+import ServeyScreen from '../screens/servey';
+import OnBoardingScreen from '../screens/onBoarding';
 
 const Tab = createBottomTabNavigator();
 
@@ -79,7 +81,35 @@ const MainNavigator = () => {
           unmountOnBlur: true,
           headerShown: false,
           tabBarIcon: ({color}) => (
-            <Image source={message} style={{width: 20, height: 20}} />
+            <Image source={images.survey} style={{width: 20, height: 20}} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Servey"
+        component={ServeyScreen}
+        options={{
+          unmountOnBlur: true,
+          headerShown: false,
+          tabBarIcon: ({color, focused}) => (
+            <Image
+              source={focused ? images.appointment : images.appointment}
+              style={{width: 30, height: 30}}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Boarding"
+        component={OnBoardingScreen}
+        options={{
+          unmountOnBlur: true,
+          headerShown: false,
+          tabBarIcon: ({color, focused}) => (
+            <Image
+              source={focused ? images.profileSelected : profile}
+              style={{width: 20, height: 20}}
+            />
           ),
         }}
       />
@@ -216,7 +246,11 @@ const TabBar = ({
               ? images[`appointment${isFocused ? 'Select' : ''}`]
               : route.name === 'Home'
               ? images.homeIcon //images[`call${isFocused ? 'Selected' : ''}`]
-              : images[`profile${isFocused ? 'Selected' : ''}`];
+              : route.name === 'Profile'
+              ? images[`profile${isFocused ? 'Selected' : ''}`]
+              : route.name === 'Servey'
+              ? images[`survey`]
+              : images[`boarding`]
 
           return (
             // index !== 2 ?
@@ -240,8 +274,8 @@ const TabBar = ({
               }}>
               <Image
                 style={{
-                  width: index === 3 ? 50 : 23,
-                  height: index === 3 ? 50 : 23,
+                  width: index === 3 ? 60 : 23,
+                  height: index === 3 ? 60 : 23,
                   resizeMode: 'contain',
                 }}
                 source={icon}

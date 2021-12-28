@@ -47,6 +47,7 @@
     "react-native-vector-icons": "^8.1.0",
     "react-native-voip-push-notification": "^3.3.0",
     "react-native-webview": "^11.14.0",
+    "react-native-youtube-iframe": "^2.2.1",
     "react-redux": "^7.2.5",
     "redux": "^4.1.1",
     "redux-persist": "^6.0.0",
