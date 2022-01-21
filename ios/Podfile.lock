@@ -40,7 +40,7 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 7.4)
     - nanopb (~> 2.30908.0)
   - fmt (6.2.1)
-  - FreshchatSDK (5.0.1)
+  - FreshchatSDK (5.0.3)
   - glog (0.3.5)
   - GoogleDataTransport (9.1.2):
     - GoogleUtilities/Environment (~> 7.2)
@@ -294,9 +294,6 @@ PODS:
     - React-Core
   - react-native-splash-screen (3.2.0):
     - React
-  - react-native-twilio-phone (1.8.0):
-    - React
-    - TwilioVoice (~> 6.2)
   - react-native-webview (11.14.4):
     - React-Core
   - React-perflogger (0.66.3)
@@ -377,8 +374,8 @@ PODS:
     - Firebase/Messaging (= 8.8.0)
     - React-Core
     - RNFBApp
-  - RNFreshchatSDK (4.0.1):
-    - FreshchatSDK (= 5.0.1)
+  - RNFreshchatSDK (4.0.2):
+    - FreshchatSDK (= 5.0.3)
     - React
   - RNGestureHandler (1.10.3):
     - React-Core
@@ -404,7 +401,6 @@ PODS:
   - RNVoipPushNotification (3.3.0):
     - React-Core
   - TOCropViewController (2.6.0)
-  - TwilioVoice (6.3.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -435,7 +431,6 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
-  - react-native-twilio-phone (from `../node_modules/react-native-twilio-phone`)
   - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -479,7 +474,6 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - TOCropViewController
-    - TwilioVoice
 
 EXTERNAL SOURCES:
   boost:
@@ -528,8 +522,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
-  react-native-twilio-phone:
-    :path: "../node_modules/react-native-twilio-phone"
   react-native-webview:
     :path: "../node_modules/react-native-webview"
   React-perflogger:
@@ -595,7 +587,7 @@ SPEC CHECKSUMS:
   FirebaseInstallations: caa7c8e0d3e2345b8829d2fa9ca1b4dfbf2fcc85
   FirebaseMessaging: 419b5c9d84f294a753c6501d8cfb9ced1ce37304
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  FreshchatSDK: c40ccf58287fd475ae2b311eb84c9cfecff8009e
+  FreshchatSDK: 3971dd915718c97d2c5305d751ad5262db47e261
   glog: 5337263514dd6f09803962437687240c5dc39aa4
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
@@ -620,7 +612,6 @@ SPEC CHECKSUMS:
   React-logger: e522e76fa3e9ec3e7d7115b49485cc065cf4ae06
   react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  react-native-twilio-phone: 94008e77d6fcd10a5469941f1d6023d679577fd4
   react-native-webview: a287d7c405756d253d88ed8e4f3c1a5256834d30
   React-perflogger: 73732888d37d4f5065198727b167846743232882
   React-RCTActionSheet: 96c6d774fa89b1f7c59fc460adc3245ba2d7fd79
@@ -639,7 +630,7 @@ SPEC CHECKSUMS:
   RNCPushNotificationIOS: 87b8d16d3ede4532745e05b03c42cff33a36cc45
   RNFBApp: 729c0666395b1953198dc4a1ec6deb8fbe1c302e
   RNFBMessaging: 8415ec196e5c1196caa26ec0742cdb48ed4d0f97
-  RNFreshchatSDK: 8a6ef347541328aad1bae88579c8af435f0496d9
+  RNFreshchatSDK: 287e302872ebf3670363b13f32fea5b771faca08
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNImageCropPicker: 73891a709e6fd8a47d32104d942757971f220aee
   RNScreens: 4d79118be80f79fa1f4aa131909a1d6e86280af3
@@ -647,7 +638,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   RNVoipPushNotification: 14bb5a389588ea1cbee4706a55df99950687fd6d
   TOCropViewController: 3105367e808b7d3d886a74ff59bf4804e7d3ab38
-  TwilioVoice: 6b1d796dcdec4ec6e6d2165bc66a266db1d2d93f
   Yoga: 32a18c0e845e185f4a2a66ec76e1fd1f958f22fa
 
 PODFILE CHECKSUM: 9530f85fdea03112af152cd8b491fad241f26679

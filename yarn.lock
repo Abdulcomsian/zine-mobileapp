@@ -1232,7 +1232,7 @@
   dependencies:
     "invariant" "^2.2.4"
 
-"@react-native-firebase/app@*", "@react-native-firebase/app@^12.9.3", "@react-native-firebase/app@12.9.3":
+"@react-native-firebase/app@^12.9.3", "@react-native-firebase/app@12.9.3":
   "integrity" "sha512-Qy5awKs/VvASUFvjXUCtkUxZo+MEt6Rv32xXK18isUDWoqsopL5o0tHiWF+86EAyZTx/j0C1nc6lYlCwvLvDwQ=="
   "resolved" "https://registry.npmjs.org/@react-native-firebase/app/-/app-12.9.3.tgz"
   "version" "12.9.3"
@@ -1241,7 +1241,7 @@
     "opencollective-postinstall" "^2.0.1"
     "superstruct" "^0.6.2"
 
-"@react-native-firebase/messaging@*", "@react-native-firebase/messaging@^12.9.3":
+"@react-native-firebase/messaging@^12.9.3":
   "integrity" "sha512-5xO6WuTmm9qfaRaTaG0jRiMr2hPzgl6IMJYtZ48/xXYLe38gxXyOd14w9f+f4yXlJftqcPIE3thLeNawMfdWBA=="
   "resolved" "https://registry.npmjs.org/@react-native-firebase/messaging/-/messaging-12.9.3.tgz"
   "version" "12.9.3"
@@ -5939,7 +5939,7 @@
   optionalDependencies:
     "moment" "^2.24.0"
 
-"react-native-callkeep@*", "react-native-callkeep@^4.3.1":
+"react-native-callkeep@^4.3.1":
   "integrity" "sha512-ezFd0ch0m81V6INUnJeyyy6WNpoUreb3heFq64F4elzGOdoVhY2m2Z/wJNin7b/zBZwKk8sEXlBXoNhW+GjDVg=="
   "resolved" "https://registry.npmjs.org/react-native-callkeep/-/react-native-callkeep-4.3.1.tgz"
   "version" "4.3.1"
@@ -5975,10 +5975,10 @@
     "prop-types" "^15.7.2"
     "react-native-iphone-x-helper" "^1.3.1"
 
-"react-native-freshchat-sdk@^4.0.1":
-  "integrity" "sha512-QlpFWUM1Kg+ndvVzD14cVf7h/dymCHgO4jyaYl4//jymT2IBTqxURVKmL+cHSdvp/j83zloQTlK+uR79PYx1gw=="
-  "resolved" "https://registry.npmjs.org/react-native-freshchat-sdk/-/react-native-freshchat-sdk-4.0.1.tgz"
-  "version" "4.0.1"
+"react-native-freshchat-sdk@^4.0.2":
+  "integrity" "sha512-MmmhjPClmoPcXgqXcTUbvBYIJodmsl1wlG06FW9ryNV3oGq9/fizZ+FwoTH/K7ox+B0zxX67W2xrzlXdnkPRrQ=="
+  "resolved" "https://registry.npmjs.org/react-native-freshchat-sdk/-/react-native-freshchat-sdk-4.0.2.tgz"
+  "version" "4.0.2"
 
 "react-native-gesture-handler@^1.10.3", "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw=="
@@ -6068,13 +6068,6 @@
   "resolved" "https://registry.npmjs.org/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz"
   "version" "1.0.5"
 
-"react-native-twilio-phone@^1.8.0":
-  "integrity" "sha512-Rnwn6S0P7imY/deXFRh5iABe/T3S6WZxUqN7H9EVz4gu1/SH2kRt5X7+2VTsx1YTErYQHohOkmIlxQcVJgselQ=="
-  "resolved" "https://registry.npmjs.org/react-native-twilio-phone/-/react-native-twilio-phone-1.8.0.tgz"
-  "version" "1.8.0"
-  dependencies:
-    "uuid-random" "^1.3.2"
-
 "react-native-vector-icons@^8.1.0", "react-native-vector-icons@>7.0.0":
   "integrity" "sha512-sHIdBB6Y0dHaot2fMXgy5J/hhCn5YuyN7SKDNFgPzL8KA1oF2/v7mgYMavnK7LIIs2dJoGnDANKf61dsU+TZlg=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-8.1.0.tgz"
@@ -6089,7 +6082,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native-voip-push-notification@*", "react-native-voip-push-notification@^3.3.0":
+"react-native-voip-push-notification@^3.3.0":
   "integrity" "sha512-A19jiwU1M/3UReUkfC68X2bW4c3mu27kuX2Kn/a1Z6clj0hVVLYi4Vk5zAboamaKiiLTXN7rdyFshkTIhD3u9g=="
   "resolved" "https://registry.npmjs.org/react-native-voip-push-notification/-/react-native-voip-push-notification-3.3.0.tgz"
   "version" "3.3.0"
@@ -6181,7 +6174,7 @@
     "react-shallow-renderer" "^16.13.1"
     "scheduler" "^0.20.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17", "react@^17.0.0", "react@>=16.6.3", "react@>=16.8.6", "react@17.0.2":
+"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17", "react@^17.0.0", "react@>=16.6.3", "react@>=16.8.6", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -7026,11 +7019,6 @@
     "string-width" "^4.2.3"
     "strip-ansi" "^6.0.1"
 
-"tawkto-react@^2.0.3":
-  "integrity" "sha512-KnTMAEA/DJNKlWNa4T7uB6+EzvgTXaEagJRGf7hPBTzMyGHARQQl4LRUi0rLPsss5dDW5ZigiORpmwHCRxk4VA=="
-  "resolved" "https://registry.npmjs.org/tawkto-react/-/tawkto-react-2.0.3.tgz"
-  "version" "2.0.3"
-
 "temp@^0.8.1":
   "integrity" "sha512-s0ZZzd0BzYv5tLSptZooSjK8oj6C+c19p7Vqta9+6NPOf7r+fxq0cJe6/oN4LTC79sy5NY8ucOJNgwsKCSbfqg=="
   "resolved" "https://registry.npmjs.org/temp/-/temp-0.8.4.tgz"
@@ -7351,11 +7339,6 @@
   "integrity" "sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM="
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
-
-"uuid-random@^1.3.2":
-  "integrity" "sha512-UOzej0Le/UgkbWEO8flm+0y+G+ljUon1QWTEZOq1rnMAsxo2+SckbiZdKzAHHlVh6gJqI1TjC/xwgR50MuCrBQ=="
-  "resolved" "https://registry.npmjs.org/uuid-random/-/uuid-random-1.3.2.tgz"
-  "version" "1.3.2"
 
 "uuid@^3.3.2":
   "integrity" "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A=="

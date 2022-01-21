@@ -625,7 +625,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ZineCollectionProject/ZineCollectionProject.entitlements;
-				CURRENT_PROJECT_VERSION = 18;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 86867B2HBG;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -696,7 +698,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.8;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -704,6 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.accrual.zinecollection;
 				PRODUCT_NAME = ZineCollectionProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -718,7 +721,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ZineCollectionProject/ZineCollectionProject.entitlements;
-				CURRENT_PROJECT_VERSION = 18;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 86867B2HBG;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,7 +793,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.8;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -796,6 +801,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.accrual.zinecollection;
 				PRODUCT_NAME = ZineCollectionProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

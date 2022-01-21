@@ -33,6 +33,20 @@ const MainNavigator = () => {
       inactiveColor="#979797"
       initialRouteName="Home">
       <Tab.Screen
+        name="Compain"
+        component={CompainScreen}
+        options={{
+          unmountOnBlur: true,
+          headerShown: false,
+          tabBarIcon: ({color, focused}) => (
+            <Image
+              source={focused ? images.compainSelected : images.compain}
+              style={{width: 20, height: 20}}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
         name="Message"
         component={MessageScreen}
         options={{
@@ -41,34 +55,6 @@ const MainNavigator = () => {
           tabBarIcon: ({color, focused}) => (
             <Image
               source={focused ? message : message}
-              style={{width: 20, height: 20}}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Calender"
-        component={CalenderScreen}
-        options={{
-          unmountOnBlur: true,
-          headerShown: false,
-          tabBarIcon: ({color, focused}) => (
-            <Image
-              source={focused ? images.appointmentSelect : images.appointment}
-              style={{width: 20, height: 20}}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
-        options={{
-          unmountOnBlur: true,
-          headerShown: false,
-          tabBarIcon: ({color, focused}) => (
-            <Image
-              source={focused ? images.profileSelected : profile}
               style={{width: 20, height: 20}}
             />
           ),
@@ -86,22 +72,23 @@ const MainNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Servey"
-        component={ServeyScreen}
+        name="Calender"
+        component={CalenderScreen}
         options={{
           unmountOnBlur: true,
           headerShown: false,
           tabBarIcon: ({color, focused}) => (
             <Image
-              source={focused ? images.appointment : images.appointment}
-              style={{width: 30, height: 30}}
+              source={focused ? images.appointmentSelect : images.appointment}
+              style={{width: 20, height: 20}}
             />
           ),
         }}
       />
+
       <Tab.Screen
-        name="Boarding"
-        component={OnBoardingScreen}
+        name="Profile"
+        component={ProfileScreen}
         options={{
           unmountOnBlur: true,
           headerShown: false,
@@ -248,9 +235,9 @@ const TabBar = ({
               ? images.homeIcon //images[`call${isFocused ? 'Selected' : ''}`]
               : route.name === 'Profile'
               ? images[`profile${isFocused ? 'Selected' : ''}`]
-              : route.name === 'Servey'
-              ? images[`survey`]
-              : images[`boarding`]
+              : route.name === 'Compain'
+              ? images[`compain${isFocused ? 'Selected' : ''}`]
+              : images[`boarding`];
 
           return (
             // index !== 2 ?
@@ -274,8 +261,8 @@ const TabBar = ({
               }}>
               <Image
                 style={{
-                  width: index === 3 ? 60 : 23,
-                  height: index === 3 ? 60 : 23,
+                  width: index === 2 ? 70 : 23,
+                  height: index === 2 ? 70 : 23,
                   resizeMode: 'contain',
                 }}
                 source={icon}

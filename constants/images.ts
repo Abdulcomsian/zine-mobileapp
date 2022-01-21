@@ -17,6 +17,8 @@ const hide = require('../assets/img/hide.png');
 const unhide = require('../assets/img/unhide.png');
 const survey = require('../assets/img/survey.png')
 const boarding = require('../assets/img/boarding.png')
+const compain = require('../assets/img/compainLogo.png')
+const compainSelected = require('../assets/img/compainSelected.png')
 
 export default {
   client,
@@ -37,5 +39,7 @@ export default {
   hide,
   unhide,
   survey,
-  boarding
+  boarding,
+  compain,
+  compainSelected,
 };

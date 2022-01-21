@@ -19,6 +19,10 @@ const compain = require('../assets/img/compain.png');
 const calender = require('../assets/img/calender.png');
 const chat = require('../assets/img/chat.png');
 const buy = require('../assets/img/buy.png');
+const video = require('../assets/img/videoLogo.png');
+const form = require('../assets/img/form.png');
+const profile = require('../assets/img/profileLogo.png');
+
 
 function HomeScreen({navigation}: {navigation: any}) {
   const {loggedIn, detail} = useSelector(({USER}) => USER);
@@ -30,7 +34,7 @@ function HomeScreen({navigation}: {navigation: any}) {
       <View style={styles.header}>
         <ImageBackground
           source={header}
-          resizeMode="cover"
+          resizeMode="stretch"
           style={styles.image}>
           <View style={styles.profileText}>
             <Text style={styles.userName}>Hi, {detail?.name}</Text>
@@ -44,7 +48,33 @@ function HomeScreen({navigation}: {navigation: any}) {
         </ImageBackground>
       </View>
       <ScrollView style={{flex: 1}} contentContainerStyle={styles.mainContent}>
+      <View style={styles.innerView}>
+          
+          <TouchableOpacity
+            style={styles.commonDiv}
+            onPress={() => navigation.navigate('OnBoarding')}>
+            <View style={styles.imgDiv}>
+              <Image source={form} style={styles.commonImg} />
+            </View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Text style={styles.nameText}>Onboarding</Text>
+              <Text style={styles.boldText}>Form</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.commonDiv}
+            onPress={() => navigation.navigate('SurveyScreen')}>
+            <View style={styles.imgDiv}>
+              <Image source={video} style={styles.commonImg} />
+            </View>
+            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+              <Text style={styles.nameText}>Onboarding</Text>
+              <Text style={styles.boldText}>Videos</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
         <View style={styles.innerView}>
+          
           <TouchableOpacity
             style={styles.commonDiv}
             onPress={() => navigation.navigate('Compain')}>
@@ -86,11 +116,11 @@ function HomeScreen({navigation}: {navigation: any}) {
             style={styles.commonDiv}
             onPress={() => navigation.navigate('SurveyScreen')}>
             <View style={styles.imgDiv}>
-              <Image source={buy} style={styles.commonImg} />
+              <Image source={profile} style={styles.commonImg} />
             </View>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Text style={styles.nameText}>Survey</Text>
-              <Text style={styles.boldText}>& Help</Text>
+              <Text style={styles.nameText}>User</Text>
+              <Text style={styles.boldText}>Profile</Text>
             </View>
           </TouchableOpacity>
         </View>
@@ -145,7 +175,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   header: {
-    height: '30%',
+    height: '15%',
     backgroundColor: '#fff',
   },
   image: {
@@ -155,7 +185,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   profileText: {
-    paddingTop: 80,
+    paddingTop: 40,
     paddingLeft: 30,
   },
   logoutImg: {
@@ -163,7 +193,7 @@ const styles = StyleSheet.create({
     height: 20,
   },
   imgView: {
-    paddingTop: 100,
+    paddingTop: 50,
     paddingRight: 30,
   },
   userName: {

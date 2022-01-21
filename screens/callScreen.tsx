@@ -2,8 +2,6 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Mainheader from '../components/header';
-
-//import {RNTwilioPhone} from 'react-native-twilio-phone';
 async function fetchAccessToken() {
   const response = await fetch(
     'https://XXXXXX.ngrok.io/accessToken?identity=alice',
@@ -37,11 +35,6 @@ const CallScreen = ({navigation}: {navigation: any}) => {
       },
     },
   };
-  // React.useEffect(() => {
-  //   return RNTwilioPhone.initialize(callKeepOptions, fetchAccessToken, {
-  //     requestPermissionsOnInit: false,
-  //   });
-  // }, []);
   return (
     <View style={[styles.mainContainer]}>
       <Mainheader title="Call" navigation={navigation} />
@@ -58,14 +51,6 @@ const CallScreen = ({navigation}: {navigation: any}) => {
     </View>
   );
 };
-
-// async function startCall() {
-//   try {
-//     await RNTwilioPhone.startCall('+00123456789');
-//   } catch (e) {
-//     console.log(e);
-//   }
-// }
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,

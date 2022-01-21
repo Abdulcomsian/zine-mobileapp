@@ -20,6 +20,7 @@ import BuySellScreen from '../screens/buySell';
 import {enableScreens} from 'react-native-screens';
 import {RemoteNavigation} from '../lib/utilts';
 import SurveyScreen from '../screens/servey';
+import OnBoarding from '../screens/onBoarding';
 enableScreens(true);
 const Stack = createStackNavigator();
 
@@ -155,6 +156,11 @@ const MainNavigator = () => {
           <Stack.Screen
             name="SurveyScreen"
             component={SurveyScreen}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="OnBoarding"
+            component={OnBoarding}
             options={{headerShown: false}}
           />
         </Fragment>
